@@ -184,6 +184,42 @@ header{
 
 /*------------------Header hero section ends--------------------*/
 
+/*------------------How It Works Begins-------------------------*/
+.work-container{
+    width: 80vw; 
+    padding: 5rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+    margin-top:-5rem;
+    border-radius: 0.5rem;
+    background-color: #fff;  /*if this is not given overlapping part will be blue instead of white*/
+
+}
+
+.work-container .main-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+    letter-spacing: 0.5rem;
+}
+ 
+.work-container-subdiv{
+    padding: 0 6rem;
+    text-align: justify;
+}
+
+.fontawesome-style{
+    font-size:2.3rem;
+    color: var(--primary-color);
+    width: 5rem;
+    height: 5rem;
+    border-radius:50%;
+    background-color: var(--bgcolor);
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 2rem auto;
+}
+/*------------------How It Works Ends-------------------------*/
 
 
 /* -------------------------------responsive media queries------------------------------- */
