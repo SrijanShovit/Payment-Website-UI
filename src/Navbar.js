@@ -4,7 +4,8 @@ const Navbar = () => {
     return (
         <>
         <section className="navbar-bg">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light ">
+          {/* removed bg-light to remove white colour */}
   <div className="container">
       {/* use container instead of container-fluid for gap on both ends */}
     <a className="navbar-brand" href="#">SrijanPay</a>
@@ -30,8 +31,8 @@ const Navbar = () => {
         
       </ul>
       <form className="d-flex">
-        <button className="btn btn-outline-success" type="submit">Sign Up</button>
-        <button className="btn btn-outline-success" type="submit">Log In</button>
+        <button className="btn btn-outline btn-style" type="submit">Sign Up</button>
+        <button className="btn btn-outline btn-style btn-style-border" type="submit">Log In</button>
       </form>
     </div>
   </div>
