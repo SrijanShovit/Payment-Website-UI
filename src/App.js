@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Header from './Header'
 import HowItWorks from './HowItWorks'
 import Aboutus from './Aboutus'
+import Services from './Services'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header/>
       <HowItWorks/>
       <Aboutus/>
+      <Services/>
     </>
   )
 }

@@ -34,17 +34,19 @@ const HowItWorks = () => {
                                        {info}
                                        </p>
 
-                                    </div>
-                
+                                    </div>                
                                 </>
                             )
                         })
-                    }
-                   
+                    }                 
                 </div>
-
             </div>
         </section>   
+
+
+        
+
+
         </>
     )
 }
