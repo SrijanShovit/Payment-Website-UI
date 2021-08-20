@@ -187,6 +187,7 @@ header{
 /*------------------How It Works Begins-------------------------*/
 .work-container{
     width: 80vw; 
+    height: 85vh;
     padding: 5rem;
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
     margin-top:-5rem;
@@ -220,6 +221,56 @@ header{
     margin: 2rem auto;
 }
 /*------------------How It Works Ends-------------------------*/
+
+
+/*------------------About Us Section starts-------------------------*/
+
+.our-services img{
+    width: 60%;
+    height: 80%;
+    margin-top: 10rem;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
+    border-radius:1.5rem;
+}
+
+.our-services .mini-title{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 5rem 0;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.our-services .main-heading{
+    font-weight: bold;
+}
+
+.our-services-info{
+    margin-top:4rem;
+}
+
+.our-services .our-services-number{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;      /*for circle*/
+    background-color:transparent;
+    font-size: 1.5rem;
+    border: 0.1rem solid var(--primary-color);
+    color: var(--primary-color);
+    /*for centering*/
+    display: grid;
+    place-items: center;
+}
+
+.our-services-data{
+    padding: 0 2rem ;
+}
+
+.our-services-data .main-hero-para{
+    margin: 1rem 0;
+}
+
+/*------------------About Us Section ends-------------------------*/
 
 
 /* -------------------------------responsive media queries------------------------------- */
