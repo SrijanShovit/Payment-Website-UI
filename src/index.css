@@ -109,6 +109,7 @@ header{
 .main-hero-container h1 {
     text-transform: capitalize;
     font-weight: bolder;
+    /* margin-left: 5rem; */
 }
 
 .main-hero-para{
@@ -187,7 +188,7 @@ header{
 /*------------------How It Works Begins-------------------------*/
 .work-container{
     width: 80vw; 
-    height: 85vh;
+    height: 95vh;
     padding: 5rem;
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
     margin-top:-5rem;
@@ -205,7 +206,7 @@ header{
  
 .work-container-subdiv{
     padding: 0 6rem;
-    text-align: justify;
+    text-align: center;
 }
 
 .fontawesome-style{
@@ -298,11 +299,253 @@ header{
 }
 
 .work-container-subdiv{
-    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.1);
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.16);
 
 }
 
+.work-container-subdiv:hover{
+    background-color: var(--bgcolor);
+    cursor: pointer;
+}
+
+.work-container-subdiv:hover > .fontawesome-style{
+    background-color: #fff;
+}
+
+.work-container-subdiv .main-hero-para{
+    width: 100%;
+}
+
+.service-main-container .work-container-subdiv .fontawesome-style{
+    text-align: left;
+    margin: 2rem 0;
+}
+
+@media (min-width: 700px){
+    .service-container .col-xxl-4{
+        flex: 0 0  auto;
+        width : 30% !important;
+        margin: auto;
+
+    }
+}
+
+@media (min-width: 700px){
+    .service-container .col-lg-4{
+        flex: 0 0 auto;
+        width : 30% !important;
+        margin:2.5rem auto;  /*without this we won't get gap*/
+    }
+}
+
 /*------------------Services Section ends-------------------------*/
+
+
+/*------------------Contact Us Section Starts-------------------------*/
+
+.contactus-section{
+    margin: 15rem;
+}
+
+.contact-leftside img{
+    min-width: 80%;
+    max-height: 30 rem;
+    height: auto;
+
+}
+
+.contact-input-field{
+    margin-bottom: 2rem;
+}
+
+
+.contact-rightside form .form-control{
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    height: 5rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    font-weight: lighter;
+}
+
+.contact-rightside form .form-check-input{
+    width: 2em;
+    height: 2em;
+}
+
+.form-checkbox-style{
+    margin: 4rem 0;
+}
+
+.contact-rightside form .main-hero-para{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: lighter;
+    margin: 0;
+    width: 75%;
+    padding: 0 2rem;
+}
+
+/* label{
+    display: block;
+} */
+/*------------------Contact Us Section Ends-------------------------*/
+
+
+/*------------------Footer Starts-------------------------*/
+
+footer{
+    padding: 5rem 0;
+    background-color: #182334;
+    color: #fff;
+}
+
+footer h2{
+    color: #fff;
+}
+
+footer li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+footer .main-hero-para{
+    margin: 0;
+}
+
+footer .fontawesome-style{
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    background-color: transparent;
+    width: 0rem;
+    height: 0rem;
+    margin: 2rem 0;
+    cursor: pointer;
+
+}
+
+footer .fontawesome-style:hover{
+    transition: all 1s;
+    animation: rotatefont 1s linear infinite alternate-reverse;
+    color: #fff;
+
+}
+
+@keyframes rotatefont{
+    0%{
+        transform: scale(0.6);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+/*------------------Footer Ends-------------------------*/
+
+
+/* --------------------------------- 404 Error Page Section 
+                        -------------------------------------------------------*/
+
+                        #notfound {
+                            position: relative;
+                            height: 100vh;
+                          }
+                          
+                          #notfound .notfound {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                          }
+                          
+                          .notfound {
+                            max-width: 920px;
+                            width: 100%;
+                            line-height: 1.4;
+                            text-align: center;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                          }
+                          
+                          .notfound .notfound-404 {
+                            position: absolute;
+                            height: 100px;
+                            top: 0;
+                            left: 50%;
+                            -webkit-transform: translateX(-50%);
+                            -ms-transform: translateX(-50%);
+                            transform: translateX(-50%);
+                            z-index: -1;
+                          }
+                          
+                          .notfound .notfound-404 h1 {
+                            font-family: "Maven Pro", sans-serif;
+                            color: #ececec;
+                            font-weight: 900;
+                            font-size: 276px;
+                            margin: 0px;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                          }
+                          
+                          .notfound h2 {
+                            font-family: "Maven Pro", sans-serif;
+                            font-size: 46px;
+                            color: #000;
+                            font-weight: 900;
+                            text-transform: uppercase;
+                            margin: 0px;
+                          }
+                          
+                          .notfound p {
+                            font-size: 16px;
+                            color: #000;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            margin-top: 15px;
+                          }
+                          
+                          .notfound a {
+                            font-size: 14px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            background: #189cf0;
+                            display: inline-block;
+                            padding: 16px 38px;
+                            border: 2px solid transparent;
+                            border-radius: 40px;
+                            color: #fff;
+                            font-weight: 400;
+                            -webkit-transition: 0.2s all;
+                            transition: 0.2s all;
+                          }
+                          
+                          .notfound a:hover {
+                            background-color: #fff;
+                            border-color: #189cf0;
+                            color: #189cf0;
+                          }
+                          
+                          @media only screen and (max-width: 480px) {
+                            .notfound .notfound-404 h1 {
+                              font-size: 162px;
+                            }
+                            .notfound h2 {
+                              font-size: 26px;
+                            }
+                          }
+                          
+                          /* --------------------------------- 404 Error Page Section  Ends
+                                                  -------------------------------------------------------*/
 
 
 /* -------------------------------responsive media queries------------------------------- */
@@ -318,7 +561,7 @@ header{
     }
 }
 
-@media (min-width: 1400px){
+@media (min-width: 700px){
     .container,
     .container-lg,
     .container-md,
@@ -326,5 +569,44 @@ header{
     .container-xl,
     .container-xxl{
         max-width: 1400px !important;
+    }
+}
+
+@media(max-width:998px){
+    .navbar .navbar-collapse{
+        margin-top: 1rem;
+        background-color: #fff;
+        padding: 2rem 1rem;
+    }
+
+    .input-group .btn-style{
+        font-size:1.2rem;
+
+    }
+
+    .main-hero-container h1{
+        font-size:2.5rem;
+    }
+
+    .main-hero-para{
+        font-size: 1.5rem;
+        padding-right: 1rem;
+        width: 100%;
+    }
+
+    .main-hero-container .header-left-side{
+        padding-left:4rem;
+        margin-top: 1rem;
+    }
+
+    .main-herosection-images{
+        position: relative;
+        height: 25rem;
+    }
+
+    .header-right-side img{
+        width: 60%;
+        height: 100%;
+        margin-top: 0rem;
     }
 }
